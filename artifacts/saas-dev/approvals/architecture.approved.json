@@ -1,0 +1,7 @@
+{
+  "approved_at": "2026-06-26T07:15:46+00:00",
+  "approved_by": "user",
+  "gate": "architecture",
+  "missing_files_at_approval": [],
+  "notes": "Architecture approved: browser-only data/control flow and no database for MVP."
+}

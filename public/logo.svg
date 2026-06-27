@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Logo">
-  <rect width="512" height="512" rx="112" fill="#0a0a0a"/>
-  <text x="50%" y="50%" dy="0.04em" text-anchor="middle" dominant-baseline="central" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="300" font-weight="700" fill="#ffffff">S</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" fill="#0e7490"/>
+  <path d="M132 148h248v216H132z" fill="#ecfeff"/>
+  <path d="M164 188h184v32H164zM164 244h136v32H164zM164 300h88v32h-88z" fill="#0e7490"/>
+  <path d="M368 120v272M104 176h304M104 336h304" stroke="#164e63" stroke-width="24" stroke-linecap="round"/>
 </svg>

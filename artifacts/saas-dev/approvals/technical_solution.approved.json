@@ -1,0 +1,7 @@
+{
+  "approved_at": "2026-06-26T07:15:06+00:00",
+  "approved_by": "user",
+  "gate": "technical_solution",
+  "missing_files_at_approval": [],
+  "notes": "Approved technical approach: client-side File/Canvas processing plus JSZip; no AI workflow needed; Pica/react-easy-crop deferred unless QA requires."
+}

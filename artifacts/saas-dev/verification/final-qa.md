@@ -1,0 +1,28 @@
+# Final QA
+
+- Gate-ready: yes
+- Lint: No dedicated lint script in template; ran Prettier on edited files successfully.
+- Typecheck: Passed with `pnpm exec tsc --noEmit`.
+- Build: Passed with `pnpm build`.
+- Unit tests: No unit test suite exists in the template for this MVP; covered with typecheck, production build, and browser E2E/manual checks.
+- E2E/manual: Passed with agent-browser upload/checker flow, resizer manual crop, resize all, and Download all ZIP.
+- Resize transfer flow: Passed; after uploading on `/`, clicking the Open Graph row Resize action transferred the original image and `1200 x 630` target into `/resizer`, selected the matching preset, changed the upload area into an original-image preview card, and generated a `1200 x 630` output.
+- Resize transfer responsive check: Passed; the transferred-image upload preview rendered on 390px mobile with one loaded original preview image and zero horizontal overflow.
+- Responsive screenshots: Passed; desktop and mobile screenshots saved in `artifacts/saas-dev/verification/screenshots/`, including `illustrated-copy-home-desktop-final.png`, `illustrated-copy-home-mobile-final.png`, `ui-redesign-checker-results-desktop.png`, and `ui-redesign-resizer-results-desktop-final.png`.
+- Copy illustration check: Passed; GPT-image generated Web/SEO, Social crop, and Print/PPI illustrations were inserted only into the scenario copy cards, loaded successfully in browser, and kept zero horizontal overflow on desktop and mobile.
+- SEO title: `Image Size Checker - Resize Images Fast`, 39 chars, contains primary keyword.
+- SEO description: `Image Size Checker checks dimensions, compares presets, and resizes images for web, social, and print in your browser.`, 118 chars, contains primary keyword.
+- Resizer SEO title: `Image Resizer - Resize Images Online`, 36 chars, contains primary keyword.
+- Resizer SEO description: `Image Resizer resizes, crops, and exports web, social, and print images locally with presets, custom dimensions, and ZIP downloads.`, 131 chars, contains primary keyword.
+- Canonical: Present on `/` and `/resizer`; local dev fallback is `http://localhost:3100/` and should use the production app URL env when deployed.
+- H1: `/` has `Image Size Checker`; `/resizer` has `Image Resizer`.
+- SEO pages checked: 2
+- SEO checker result: Passed for `/` and `/resizer` with `validate_seo.py`.
+- Landing visible word count: 1194
+- Primary keyword occurrences: 13
+- Primary keyword density: 3.2663%
+- Resizer visible word count: 1016
+- Resizer primary keyword occurrences: 19
+- Resizer primary keyword density: 3.7402%
+- FAQ/schema/internal links: Internal links to `/resizer`, `#results`, and `#scenarios` are present; JSON-LD schema was not added in this MVP.
+- Known risks: Production publish was not requested or performed; set `VITE_APP_URL`/app URL for the final production canonical domain before deployment.

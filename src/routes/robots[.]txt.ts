@@ -9,9 +9,6 @@ export const Route = createFileRoute('/robots.txt')({
         const body = [
           'User-Agent: *',
           'Allow: /',
-          'Disallow: /admin',
-          'Disallow: /settings',
-          'Disallow: /api/',
           'Disallow: /*?*',
           '',
           `Sitemap: ${envConfigs.app_url}/sitemap.xml`,

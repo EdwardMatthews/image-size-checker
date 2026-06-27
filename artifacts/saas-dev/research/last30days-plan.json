@@ -1,0 +1,43 @@
+{
+  "intent": "product",
+  "freshness_mode": "balanced_recent",
+  "cluster_mode": "debate",
+  "subqueries": [
+    {
+      "label": "primary",
+      "search_query": "image size checker image resizer",
+      "ranking_query": "What do people need or complain about when checking image dimensions and resizing images?",
+      "sources": [
+        "reddit",
+        "x",
+        "youtube",
+        "tiktok",
+        "instagram",
+        "hackernews",
+        "polymarket"
+      ],
+      "weight": 1.0
+    },
+    {
+      "label": "batch_resize",
+      "search_query": "bulk image resizer batch resize crop",
+      "ranking_query": "What do users want from bulk image resizing, cropping, and download workflows?",
+      "sources": ["reddit", "youtube", "x"],
+      "weight": 0.8
+    },
+    {
+      "label": "requirements",
+      "search_query": "image dimensions requirements social media print SEO",
+      "ranking_query": "Where do users struggle with image dimension requirements for social media, SEO, or print?",
+      "sources": ["reddit", "youtube", "x", "hackernews"],
+      "weight": 0.7
+    },
+    {
+      "label": "privacy_exports",
+      "search_query": "online image resizer privacy download zip",
+      "ranking_query": "How do users discuss privacy, local processing, and ZIP export for online image tools?",
+      "sources": ["reddit", "x", "youtube"],
+      "weight": 0.6
+    }
+  ]
+}

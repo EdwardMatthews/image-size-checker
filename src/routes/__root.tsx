@@ -1,7 +1,5 @@
 /// <reference types="vite/client" />
 import type { ReactNode } from 'react';
-import { QueryClientProvider } from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import {
   createRootRoute,
   HeadContent,
@@ -9,16 +7,10 @@ import {
   Scripts,
   type ErrorComponentProps,
 } from '@tanstack/react-router';
-import { createServerFn } from '@tanstack/react-start';
 import { ThemeProvider } from 'next-themes';
 
 import { envConfigs } from '@/config';
-import { getQueryClient } from '@/lib/query-client';
 import { getLocale, locales, localizeUrl } from '@/paraglide/runtime.js';
-import { GoogleAnalytics } from '@/components/analytics/google-analytics';
-import { Plausible } from '@/components/analytics/plausible';
-import { CustomerService } from '@/components/customer-service';
-import { GoogleOneTap } from '@/components/google-one-tap';
 import { Toaster } from '@/components/ui/sonner';
 
 import '@fontsource-variable/inter';
@@ -27,32 +19,7 @@ import '@fontsource/libre-baskerville/700.css';
 import '@fontsource/libre-baskerville/400-italic.css';
 import '@/styles/globals.css';
 
-// Analytics IDs live in the DB config (1h-cached service). Fetched via a
-// server function so drizzle/db code never reaches the client bundle.
-const getAnalyticsConfigs = createServerFn().handler(async () => {
-  const { getAllConfigs } = await import('@/modules/config/service');
-  const configs = await getAllConfigs();
-  return {
-    gaId: configs.google_analytics_id?.trim() || '',
-    plausibleDomain: configs.plausible_domain?.trim() || '',
-    plausibleSrc: configs.plausible_src?.trim() || '',
-    crispWebsiteId:
-      configs.crisp_enabled === 'true'
-        ? configs.crisp_website_id?.trim() || ''
-        : '',
-    tawkPropertyId:
-      configs.tawk_enabled === 'true'
-        ? configs.tawk_property_id?.trim() || ''
-        : '',
-    tawkWidgetId:
-      configs.tawk_enabled === 'true'
-        ? configs.tawk_widget_id?.trim() || ''
-        : '',
-  };
-});
-
 export const Route = createRootRoute({
-  loader: () => getAnalyticsConfigs(),
   head: () => {
     // head() runs on the SSR server AND again on the client during hydration.
     // On the client, app_url falls back to the localhost dev default when
@@ -88,36 +55,16 @@ export const Route = createRootRoute({
 });
 
 function RootComponent() {
-  const analytics = Route.useLoaderData();
-
   return (
-    <QueryClientProvider client={getQueryClient()}>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        <Outlet />
-        <Toaster position="top-center" richColors />
-        <GoogleOneTap />
-        {analytics?.gaId ? (
-          <GoogleAnalytics measurementId={analytics.gaId} />
-        ) : null}
-        {analytics?.plausibleDomain ? (
-          <Plausible
-            domain={analytics.plausibleDomain}
-            src={analytics.plausibleSrc || undefined}
-          />
-        ) : null}
-        <CustomerService
-          crispWebsiteId={analytics?.crispWebsiteId || undefined}
-          tawkPropertyId={analytics?.tawkPropertyId || undefined}
-          tawkWidgetId={analytics?.tawkWidgetId || undefined}
-        />
-      </ThemeProvider>
-      {import.meta.env.DEV && <ReactQueryDevtools initialIsOpen={false} />}
-    </QueryClientProvider>
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="light"
+      enableSystem
+      disableTransitionOnChange
+    >
+      <Outlet />
+      <Toaster position="top-center" richColors />
+    </ThemeProvider>
   );
 }
 

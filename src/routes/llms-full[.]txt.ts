@@ -1,13 +1,30 @@
 import { createFileRoute } from '@tanstack/react-router';
 
 import { envConfigs } from '@/config';
-import { baseLocale } from '@/paraglide/runtime.js';
-import { getLocalPosts, mergePosts } from '@/content/posts';
 
 const STATIC_PAGES: { path: string; title: string; description: string }[] = [
-  { path: '', title: 'Home', description: 'Landing page' },
-  { path: '/pricing', title: 'Pricing', description: 'Pricing plans' },
-  { path: '/blog', title: 'Blog', description: 'Blog posts and articles' },
+  {
+    path: '',
+    title: 'Image Size Checker',
+    description:
+      'Browser-based image dimension checks, preset comparison, print calculations, and batch upload summaries.',
+  },
+  {
+    path: '/resizer',
+    title: 'Image Size Checker Resizer',
+    description:
+      'Client-side batch image resizing, manual crop controls, preset exports, and ZIP downloads.',
+  },
+  {
+    path: '/privacy-policy',
+    title: 'Privacy Policy',
+    description: 'Privacy details for the browser-based image tools.',
+  },
+  {
+    path: '/terms-of-service',
+    title: 'Terms of Service',
+    description: 'Terms for using the Image Size Checker tools.',
+  },
 ];
 
 export const Route = createFileRoute('/llms-full.txt')({
@@ -28,55 +45,14 @@ export const Route = createFileRoute('/llms-full.txt')({
           ),
         ];
 
-        let posts = getLocalPosts(baseLocale);
-        try {
-          const { listPublishedArticles, findPublishedBySlug } =
-            await import('@/modules/posts/service');
-          const rows = await listPublishedArticles().catch(() => []);
-          const dbPosts = rows.map((row) => ({
-            slug: row.slug,
-            title: row.title || row.slug,
-            description: row.description || '',
-            createdAt: new Date(row.createdAt).toISOString(),
-            source: 'db' as const,
-          }));
-          posts = mergePosts(dbPosts, posts);
-
-          if (posts.length > 0) {
-            lines.push('', '## Blog Posts', '');
-
-            for (const post of posts) {
-              lines.push(`### ${post.title}`, '');
-              lines.push(`URL: ${app_url}/blog/${post.slug}`);
-              if (post.description)
-                lines.push(`Description: ${post.description}`);
-              lines.push('');
-
-              if (post.source === 'db') {
-                const detail = await findPublishedBySlug(post.slug).catch(
-                  () => null
-                );
-                if (detail?.content) {
-                  lines.push(detail.content, '');
-                }
-              }
-
-              lines.push('---', '');
-            }
-          }
-        } catch {
-          // Database unreachable — list local posts without content.
-          if (posts.length > 0) {
-            lines.push('', '## Blog Posts', '');
-            for (const post of posts) {
-              lines.push(`### ${post.title}`, '');
-              lines.push(`URL: ${app_url}/blog/${post.slug}`);
-              if (post.description)
-                lines.push(`Description: ${post.description}`);
-              lines.push('', '---', '');
-            }
-          }
-        }
+        lines.push(
+          '',
+          '## Tool Summary',
+          '',
+          'The home page is the primary Image Size Checker experience. It accepts local image files, reads width, height, file size, type, aspect ratio, and total pixels, then compares each uploaded image against Web/SEO, Social, and Print presets without requiring a preselected requirement.',
+          '',
+          'The resizer page adds client-side resizing, manual crop values, output format controls, batch processing, individual downloads, and Download all ZIP export.'
+        );
 
         lines.push('');
 

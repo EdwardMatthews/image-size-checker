@@ -61,39 +61,39 @@
 
 @layer base {
   :root {
-    --background: oklch(0.977 0.004 75);
-    --foreground: oklch(0.275 0.007 60);
-    --card: oklch(0.988 0.003 75);
-    --card-foreground: oklch(0.275 0.007 60);
-    --popover: oklch(0.988 0.003 75);
-    --popover-foreground: oklch(0.275 0.007 60);
-    --primary: oklch(0.22 0.005 60);
+    --background: oklch(0.985 0.006 210);
+    --foreground: oklch(0.23 0.036 222);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.23 0.036 222);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.23 0.036 222);
+    --primary: oklch(0.52 0.107 219);
     --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.948 0.006 75);
-    --secondary-foreground: oklch(0.275 0.007 60);
-    --muted: oklch(0.948 0.006 75);
-    --muted-foreground: oklch(0.5 0.005 60);
-    --accent: oklch(0.948 0.006 75);
-    --accent-foreground: oklch(0.275 0.007 60);
+    --secondary: oklch(0.962 0.021 210);
+    --secondary-foreground: oklch(0.23 0.036 222);
+    --muted: oklch(0.962 0.021 210);
+    --muted-foreground: oklch(0.48 0.032 220);
+    --accent: oklch(0.94 0.045 190);
+    --accent-foreground: oklch(0.25 0.055 210);
     --destructive: oklch(0.577 0.245 27.325);
     --destructive-foreground: oklch(0.577 0.245 27.325);
-    --border: oklch(0.908 0.005 75);
-    --input: oklch(0.908 0.005 75);
-    --ring: oklch(0.708 0 0);
-    --chart-1: oklch(0.646 0.222 41.116);
-    --chart-2: oklch(0.6 0.118 184.714);
-    --chart-3: oklch(0.398 0.07 227.392);
-    --chart-4: oklch(0.828 0.189 84.429);
-    --chart-5: oklch(0.769 0.188 70.08);
-    --radius: 0.625rem;
-    --sidebar: oklch(0.988 0.003 75);
-    --sidebar-foreground: oklch(0.275 0.007 60);
-    --sidebar-primary: oklch(0.22 0.005 60);
+    --border: oklch(0.89 0.019 212);
+    --input: oklch(0.89 0.019 212);
+    --ring: oklch(0.52 0.107 219);
+    --chart-1: oklch(0.52 0.107 219);
+    --chart-2: oklch(0.7 0.13 165);
+    --chart-3: oklch(0.7 0.13 83);
+    --chart-4: oklch(0.62 0.15 25);
+    --chart-5: oklch(0.58 0.1 280);
+    --radius: 0.5rem;
+    --sidebar: oklch(1 0 0);
+    --sidebar-foreground: oklch(0.23 0.036 222);
+    --sidebar-primary: oklch(0.52 0.107 219);
     --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.948 0.006 75);
-    --sidebar-accent-foreground: oklch(0.275 0.007 60);
-    --sidebar-border: oklch(0.908 0.005 75);
-    --sidebar-ring: oklch(0.708 0 0);
+    --sidebar-accent: oklch(0.962 0.021 210);
+    --sidebar-accent-foreground: oklch(0.23 0.036 222);
+    --sidebar-border: oklch(0.89 0.019 212);
+    --sidebar-ring: oklch(0.52 0.107 219);
   }
 
   .dark {
@@ -138,6 +138,63 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .premium-bg {
+    background-color: #f7fbff;
+    background-image:
+      linear-gradient(rgba(15, 23, 42, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 23, 42, 0.045) 1px, transparent 1px),
+      linear-gradient(180deg, #f8fbff 0%, #edf7fb 42%, #ffffff 100%);
+    background-size:
+      32px 32px,
+      32px 32px,
+      auto;
+  }
+
+  .premium-card {
+    border: 1px solid rgba(148, 163, 184, 0.38);
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow:
+      0 24px 70px rgba(15, 23, 42, 0.08),
+      0 1px 0 rgba(255, 255, 255, 0.8) inset;
+    backdrop-filter: blur(14px);
+  }
+
+  .premium-panel {
+    border: 1px solid rgba(99, 102, 241, 0.18);
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    box-shadow: 0 14px 38px rgba(15, 23, 42, 0.06);
+  }
+
+  .premium-eyebrow {
+    color: #4f46e5;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .premium-kicker {
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.78);
+    color: #334155;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  }
+
+  .premium-action {
+    background: #10b981;
+    color: #052e16;
+    box-shadow: 0 12px 26px rgba(16, 185, 129, 0.24);
+  }
+
+  .premium-action:hover {
+    background: #34d399;
   }
 
   @keyframes drift-a {

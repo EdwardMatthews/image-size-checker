@@ -1,0 +1,346 @@
+{
+  "fetched_at": "2026-06-26T06:53:45+00:00",
+  "normalized_results": [
+    {
+      "displayed_link": "https://www.posterburner.com \u203a Image-Size-Finder",
+      "domain": "posterburner.com",
+      "position": 1,
+      "raw_url_fields": {
+        "displayedLink": "https://www.posterburner.com \u203a Image-Size-Finder",
+        "link": "https://www.posterburner.com/Image-Size-Finder.aspx?srsltid=AfmBOoqNOZU0XmfR1qtzgLC_bpvbtHimHIGOaBrvFIHjy7nzFhLmY2F1"
+      },
+      "result_type": "direct product/tool",
+      "snippet": "Find the size and pixel depth of your image. This free tool shows you the height, width, and pixel per inch of your image. Get 3+ posters and shipping is FREE ...",
+      "source": "PosterBurner",
+      "title": "Image Size Finder | Free Tool",
+      "url": "https://www.posterburner.com/Image-Size-Finder.aspx?srsltid=AfmBOoqNOZU0XmfR1qtzgLC_bpvbtHimHIGOaBrvFIHjy7nzFhLmY2F1"
+    },
+    {
+      "displayed_link": "https://imagy.app \u203a image-size-finder",
+      "domain": "imagy.app",
+      "position": 2,
+      "raw_url_fields": {
+        "displayedLink": "https://imagy.app \u203a image-size-finder",
+        "link": "https://imagy.app/image-size-finder/"
+      },
+      "result_type": "direct product/tool",
+      "snippet": "Drop your image into our image size finder to instantly see width and height. No registration required. This tool supports JPEG/JPG, TIFF, PNG, HEIC/HEIF, WebP ...",
+      "source": "imagy.app",
+      "title": "Image Size Finder - Check Image Width, Height & File Size",
+      "url": "https://imagy.app/image-size-finder/"
+    },
+    {
+      "displayed_link": "https://imagesizefinder.org",
+      "domain": "imagesizefinder.org",
+      "position": 3,
+      "raw_url_fields": {
+        "displayedLink": "https://imagesizefinder.org",
+        "link": "https://imagesizefinder.org/"
+      },
+      "result_type": "direct product/tool",
+      "snippet": "Free online tool to instantly find image dimensions (width \u00d7 height), file size, resolution, MIME type, and metadata.",
+      "source": "imagesizefinder.org",
+      "title": "Image Size Finder - Check Image Dimensions, File Size & Info",
+      "url": "https://imagesizefinder.org/"
+    },
+    {
+      "displayed_link": "https://onlinetools.com \u203a image \u203a find-image-dimensions",
+      "domain": "onlinetools.com",
+      "position": 4,
+      "raw_url_fields": {
+        "displayedLink": "https://onlinetools.com \u203a image \u203a find-image-dimensions",
+        "link": "https://onlinetools.com/image/find-image-dimensions"
+      },
+      "result_type": "direct product/tool",
+      "snippet": "Free online image dimensions finder. Just drag and drop your image here and it will automatically display its width and height in pixels.Read more",
+      "source": "Online Tools",
+      "title": "Find Image Dimensions",
+      "url": "https://onlinetools.com/image/find-image-dimensions"
+    },
+    {
+      "displayed_link": "https://tools.knowledgewalls.com \u203a image-size-finder",
+      "domain": "tools.knowledgewalls.com",
+      "position": 5,
+      "raw_url_fields": {
+        "displayedLink": "https://tools.knowledgewalls.com \u203a image-size-finder",
+        "link": "https://tools.knowledgewalls.com/image-size-finder"
+      },
+      "result_type": "direct product/tool",
+      "snippet": "Image Size Finder to find various sizes of JPG, GIF, BMP, PNG images online. Generates Height and Width size of image in Pixel, CM and Inches, Resolution DPI ...Read more",
+      "source": "Knowledge Walls",
+      "title": "Image Size Finder - Find Size of JPG, GIF, BMP, PNG Image",
+      "url": "https://tools.knowledgewalls.com/image-size-finder"
+    },
+    {
+      "displayed_link": "https://presetpedia.com \u203a photo-dimensions-calculator",
+      "domain": "presetpedia.com",
+      "position": 6,
+      "raw_url_fields": {
+        "displayedLink": "https://presetpedia.com \u203a photo-dimensions-calculator",
+        "link": "https://presetpedia.com/photo-dimensions-calculator.html"
+      },
+      "result_type": "direct product/tool",
+      "snippet": "Free online Image Size Finder tool. Instantly check image width, height, file size, aspect ratio, megapixels, DPI & unit conversions (px, cm, mm, inch).",
+      "source": "Presetpedia",
+      "title": "Image Size Finder Check Width, Height & File Size",
+      "url": "https://presetpedia.com/photo-dimensions-calculator.html"
+    },
+    {
+      "displayed_link": "https://fineartprinting.com.sg \u203a tools \u203a image-analyser",
+      "domain": "fineartprinting.com.sg",
+      "position": 7,
+      "raw_url_fields": {
+        "displayedLink": "https://fineartprinting.com.sg \u203a tools \u203a image-analyser",
+        "link": "https://fineartprinting.com.sg/tools/image-analyser/"
+      },
+      "result_type": "direct product/tool",
+      "snippet": "Free image resolution and print-size checker. Drop in any JPG or PNG to see its pixel dimensions, file size, and the maximum sharp print size at 300 PPI.",
+      "source": "fineartprinting.com.sg",
+      "title": "Image Resolution Checker - Check PPI - Fine Art Printing",
+      "url": "https://fineartprinting.com.sg/tools/image-analyser/"
+    },
+    {
+      "displayed_link": "https://bug0.com \u203a Tools",
+      "domain": "bug0.com",
+      "position": 8,
+      "raw_url_fields": {
+        "displayedLink": "https://bug0.com \u203a Tools",
+        "link": "https://bug0.com/tools/image-size-finder"
+      },
+      "result_type": "direct product/tool",
+      "snippet": "Find the pixel dimensions of any image. Width, height, aspect ratio, file size. Drop a file or paste a URL. Free, client-side. Works with PNG, JPG, WebP, ...",
+      "source": "Bug0",
+      "title": "Image Size Finder | Free Online Tool",
+      "url": "https://bug0.com/tools/image-size-finder"
+    },
+    {
+      "displayed_link": "https://imagesizefinder.com",
+      "domain": "imagesizefinder.com",
+      "position": 9,
+      "raw_url_fields": {
+        "displayedLink": "https://imagesizefinder.com",
+        "link": "https://imagesizefinder.com/"
+      },
+      "result_type": "unknown",
+      "snippet": "Upload an image to Image Size Finder, review dimensions and file size, then inspect resolution and metadata in seconds. Everything runs locally in your browser.Read more",
+      "source": "imagesizefinder.com",
+      "title": "Image Size Finder - Check Dimensions, File Size & Metadata",
+      "url": "https://imagesizefinder.com/"
+    },
+    {
+      "displayed_link": "https://imagesizechecker.com",
+      "domain": "imagesizechecker.com",
+      "position": 10,
+      "raw_url_fields": {
+        "displayedLink": "https://imagesizechecker.com",
+        "link": "https://imagesizechecker.com/"
+      },
+      "result_type": "direct product/tool",
+      "snippet": "Using our image size checker is simple: drag and drop your images, paste from clipboard, or click to upload. The tool instantly analyzes and displays all size ...Read more",
+      "source": "imagesizechecker.com",
+      "title": "Image Size Checker - Check Image Dimensions & File Size ...",
+      "url": "https://imagesizechecker.com/"
+    }
+  ],
+  "provider": "hasdata",
+  "raw": {
+    "organicResults": [
+      {
+        "displayedLink": "https://www.posterburner.com \u203a Image-Size-Finder",
+        "link": "https://www.posterburner.com/Image-Size-Finder.aspx?srsltid=AfmBOoqNOZU0XmfR1qtzgLC_bpvbtHimHIGOaBrvFIHjy7nzFhLmY2F1",
+        "position": 1,
+        "snippet": "Find the size and pixel depth of your image. This free tool shows you the height, width, and pixel per inch of your image. Get 3+ posters and shipping is FREE ...",
+        "snippetHighlitedWords": [
+          "Find the size and pixel depth of your image"
+        ],
+        "source": "PosterBurner",
+        "title": "Image Size Finder | Free Tool"
+      },
+      {
+        "displayedLink": "https://imagy.app \u203a image-size-finder",
+        "link": "https://imagy.app/image-size-finder/",
+        "position": 2,
+        "snippet": "Drop your image into our image size finder to instantly see width and height. No registration required. This tool supports JPEG/JPG, TIFF, PNG, HEIC/HEIF, WebP ...",
+        "snippetHighlitedWords": ["instantly see width and height"],
+        "source": "imagy.app",
+        "title": "Image Size Finder - Check Image Width, Height & File Size"
+      },
+      {
+        "displayedLink": "https://imagesizefinder.org",
+        "link": "https://imagesizefinder.org/",
+        "position": 3,
+        "snippet": "Free online tool to instantly find image dimensions (width \u00d7 height), file size, resolution, MIME type, and metadata.",
+        "snippetHighlitedWords": ["instant"],
+        "source": "imagesizefinder.org",
+        "title": "Image Size Finder - Check Image Dimensions, File Size & Info"
+      },
+      {
+        "displayedLink": "https://onlinetools.com \u203a image \u203a find-image-dimensions",
+        "link": "https://onlinetools.com/image/find-image-dimensions",
+        "position": 4,
+        "snippet": "Free online image dimensions finder. Just drag and drop your image here and it will automatically display its width and height in pixels.Read more",
+        "snippetHighlitedWords": ["Free online image dimensions finder"],
+        "source": "Online Tools",
+        "title": "Find Image Dimensions"
+      },
+      {
+        "displayedLink": "https://tools.knowledgewalls.com \u203a image-size-finder",
+        "link": "https://tools.knowledgewalls.com/image-size-finder",
+        "position": 5,
+        "snippet": "Image Size Finder to find various sizes of JPG, GIF, BMP, PNG images online. Generates Height and Width size of image in Pixel, CM and Inches, Resolution DPI ...Read more",
+        "snippetHighlitedWords": [
+          "find various sizes of JPG, GIF, BMP, PNG images"
+        ],
+        "source": "Knowledge Walls",
+        "title": "Image Size Finder - Find Size of JPG, GIF, BMP, PNG Image"
+      },
+      {
+        "displayedLink": "https://presetpedia.com \u203a photo-dimensions-calculator",
+        "link": "https://presetpedia.com/photo-dimensions-calculator.html",
+        "position": 6,
+        "snippet": "Free online Image Size Finder tool. Instantly check image width, height, file size, aspect ratio, megapixels, DPI & unit conversions (px, cm, mm, inch).",
+        "snippetHighlitedWords": ["Free online Image Size Finder tool"],
+        "source": "Presetpedia",
+        "title": "Image Size Finder Check Width, Height & File Size"
+      },
+      {
+        "displayedLink": "https://fineartprinting.com.sg \u203a tools \u203a image-analyser",
+        "link": "https://fineartprinting.com.sg/tools/image-analyser/",
+        "position": 7,
+        "snippet": "Free image resolution and print-size checker. Drop in any JPG or PNG to see its pixel dimensions, file size, and the maximum sharp print size at 300 PPI.",
+        "snippetHighlitedWords": [
+          "Free image resolution and print-size checker"
+        ],
+        "source": "fineartprinting.com.sg",
+        "title": "Image Resolution Checker - Check PPI - Fine Art Printing"
+      },
+      {
+        "displayedLink": "https://bug0.com \u203a Tools",
+        "link": "https://bug0.com/tools/image-size-finder",
+        "position": 8,
+        "richSnippet": {
+          "top": {
+            "detectedExtensions": {
+              "rating": 5,
+              "reviews": 5
+            },
+            "extensions": ["5.0(5)", "$2,500.00"]
+          }
+        },
+        "snippet": "Find the pixel dimensions of any image. Width, height, aspect ratio, file size. Drop a file or paste a URL. Free, client-side. Works with PNG, JPG, WebP, ...",
+        "snippetHighlitedWords": ["Find the pixel dimensions of any image"],
+        "source": "Bug0",
+        "title": "Image Size Finder | Free Online Tool"
+      },
+      {
+        "displayedLink": "https://imagesizefinder.com",
+        "link": "https://imagesizefinder.com/",
+        "position": 9,
+        "snippet": "Upload an image to Image Size Finder, review dimensions and file size, then inspect resolution and metadata in seconds. Everything runs locally in your browser.Read more",
+        "snippetHighlitedWords": ["Upload an image to Image Size Finder"],
+        "source": "imagesizefinder.com",
+        "title": "Image Size Finder - Check Dimensions, File Size & Metadata"
+      },
+      {
+        "displayedLink": "https://imagesizechecker.com",
+        "link": "https://imagesizechecker.com/",
+        "position": 10,
+        "snippet": "Using our image size checker is simple: drag and drop your images, paste from clipboard, or click to upload. The tool instantly analyzes and displays all size ...Read more",
+        "snippetHighlitedWords": ["Using our image size checker is simple"],
+        "source": "imagesizechecker.com",
+        "title": "Image Size Checker - Check Image Dimensions & File Size ..."
+      }
+    ],
+    "pagination": {
+      "next": "https://www.google.com/search?q=Image+Size+Checker&sca_esv=13d980256a79daea&hl=en&gl=us&ei=9yE-aqDwC9iZwbkPj8qTwA4&start=10&sa=N&sstk=AU9db-DLTUnY6GZFjCyz3JJi5REsqnqpA8lmGl982XLQUnad8oJR0J9c3-9ocJIz6dGjQKFLKeMCN37mvGqlcz6kCeRE1tE6AV-hjA&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ8NMDegQINRAU",
+      "pages": [
+        {
+          "2": "https://www.google.com/search?q=Image+Size+Checker&sca_esv=13d980256a79daea&hl=en&gl=us&ei=9yE-aqDwC9iZwbkPj8qTwA4&start=10&sa=N&sstk=AU9db-DLTUnY6GZFjCyz3JJi5REsqnqpA8lmGl982XLQUnad8oJR0J9c3-9ocJIz6dGjQKFLKeMCN37mvGqlcz6kCeRE1tE6AV-hjA&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ8tMDegQINRAE"
+        },
+        {
+          "3": "https://www.google.com/search?q=Image+Size+Checker&sca_esv=13d980256a79daea&hl=en&gl=us&ei=9yE-aqDwC9iZwbkPj8qTwA4&start=20&sa=N&sstk=AU9db-DLTUnY6GZFjCyz3JJi5REsqnqpA8lmGl982XLQUnad8oJR0J9c3-9ocJIz6dGjQKFLKeMCN37mvGqlcz6kCeRE1tE6AV-hjA&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ8tMDegQINRAG"
+        },
+        {
+          "4": "https://www.google.com/search?q=Image+Size+Checker&sca_esv=13d980256a79daea&hl=en&gl=us&ei=9yE-aqDwC9iZwbkPj8qTwA4&start=30&sa=N&sstk=AU9db-DLTUnY6GZFjCyz3JJi5REsqnqpA8lmGl982XLQUnad8oJR0J9c3-9ocJIz6dGjQKFLKeMCN37mvGqlcz6kCeRE1tE6AV-hjA&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ8tMDegQINRAI"
+        },
+        {
+          "5": "https://www.google.com/search?q=Image+Size+Checker&sca_esv=13d980256a79daea&hl=en&gl=us&ei=9yE-aqDwC9iZwbkPj8qTwA4&start=40&sa=N&sstk=AU9db-DLTUnY6GZFjCyz3JJi5REsqnqpA8lmGl982XLQUnad8oJR0J9c3-9ocJIz6dGjQKFLKeMCN37mvGqlcz6kCeRE1tE6AV-hjA&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ8tMDegQINRAK"
+        },
+        {
+          "6": "https://www.google.com/search?q=Image+Size+Checker&sca_esv=13d980256a79daea&hl=en&gl=us&ei=9yE-aqDwC9iZwbkPj8qTwA4&start=50&sa=N&sstk=AU9db-DLTUnY6GZFjCyz3JJi5REsqnqpA8lmGl982XLQUnad8oJR0J9c3-9ocJIz6dGjQKFLKeMCN37mvGqlcz6kCeRE1tE6AV-hjA&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ8tMDegQINRAM"
+        },
+        {
+          "7": "https://www.google.com/search?q=Image+Size+Checker&sca_esv=13d980256a79daea&hl=en&gl=us&ei=9yE-aqDwC9iZwbkPj8qTwA4&start=60&sa=N&sstk=AU9db-DLTUnY6GZFjCyz3JJi5REsqnqpA8lmGl982XLQUnad8oJR0J9c3-9ocJIz6dGjQKFLKeMCN37mvGqlcz6kCeRE1tE6AV-hjA&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ8tMDegQINRAO"
+        },
+        {
+          "8": "https://www.google.com/search?q=Image+Size+Checker&sca_esv=13d980256a79daea&hl=en&gl=us&ei=9yE-aqDwC9iZwbkPj8qTwA4&start=70&sa=N&sstk=AU9db-DLTUnY6GZFjCyz3JJi5REsqnqpA8lmGl982XLQUnad8oJR0J9c3-9ocJIz6dGjQKFLKeMCN37mvGqlcz6kCeRE1tE6AV-hjA&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ8tMDegQINRAQ"
+        },
+        {
+          "9": "https://www.google.com/search?q=Image+Size+Checker&sca_esv=13d980256a79daea&hl=en&gl=us&ei=9yE-aqDwC9iZwbkPj8qTwA4&start=80&sa=N&sstk=AU9db-DLTUnY6GZFjCyz3JJi5REsqnqpA8lmGl982XLQUnad8oJR0J9c3-9ocJIz6dGjQKFLKeMCN37mvGqlcz6kCeRE1tE6AV-hjA&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ8tMDegQINRAS"
+        }
+      ]
+    },
+    "relatedSearches": [
+      {
+        "blockPosition": 1,
+        "link": "https://www.google.com/search?sca_esv=13d980256a79daea&hl=en&gl=us&q=Image+size+checker+online&sa=X&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ1QJ6BAg4EAE",
+        "query": "Image size checker online"
+      },
+      {
+        "blockPosition": 1,
+        "link": "https://www.google.com/search?sca_esv=13d980256a79daea&hl=en&gl=us&q=Image+size+checker+in+cm&sa=X&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ1QJ6BAg-EAE",
+        "query": "Image size checker in cm"
+      },
+      {
+        "blockPosition": 1,
+        "link": "https://www.google.com/search?sca_esv=13d980256a79daea&hl=en&gl=us&q=Image+size+checker+in+mm&sa=X&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ1QJ6BAg9EAE",
+        "query": "Image size checker in mm"
+      },
+      {
+        "blockPosition": 1,
+        "link": "https://www.google.com/search?sca_esv=13d980256a79daea&hl=en&gl=us&q=Image+size+checker+in+px&sa=X&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ1QJ6BAg8EAE",
+        "query": "Image size checker in px"
+      },
+      {
+        "blockPosition": 1,
+        "link": "https://www.google.com/search?sca_esv=13d980256a79daea&hl=en&gl=us&q=Image+Size+checker+in+KB&sa=X&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ1QJ6BAg7EAE",
+        "query": "Image Size checker in KB"
+      },
+      {
+        "blockPosition": 1,
+        "link": "https://www.google.com/search?sca_esv=13d980256a79daea&hl=en&gl=us&q=Image+size+checker+in+inch&sa=X&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ1QJ6BAg6EAE",
+        "query": "Image size checker in inch"
+      },
+      {
+        "blockPosition": 1,
+        "link": "https://www.google.com/search?sca_esv=13d980256a79daea&hl=en&gl=us&q=Image+size+checker+online+free&sa=X&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ1QJ6BAg3EAE",
+        "query": "Image size checker online free"
+      },
+      {
+        "blockPosition": 1,
+        "link": "https://www.google.com/search?sca_esv=13d980256a79daea&hl=en&gl=us&q=Image+size+checker+app&sa=X&ved=2ahUKEwjgx5iOqaSVAxXYTDABHQ_lBOgQ1QJ6BAg5EAE",
+        "query": "Image size checker app"
+      }
+    ],
+    "requestMetadata": {
+      "html": "https://files.hasdata.com/6bf84aa2-05c7-41dc-95a5-b0dff0359a07.html",
+      "id": "6bf84aa2-05c7-41dc-95a5-b0dff0359a07",
+      "json": "https://files.hasdata.com/6bf84aa2-05c7-41dc-95a5-b0dff0359a07.json",
+      "status": "ok",
+      "url": "https://www.google.com/search?q=Image+Size+Checker&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw%3D%3D&hl=en&gl=us&sourceid=chrome&ie=UTF-8"
+    },
+    "searchInformation": {
+      "organicResultsState": "Results for exact spelling",
+      "queryDisplayed": "Image Size Checker",
+      "timeTaken": 1.07,
+      "totalResults": 89
+    }
+  },
+  "request": {
+    "api_key": "ff28...e1ce",
+    "device_type": "desktop",
+    "endpoint": "https://api.hasdata.com/scrape/google/serp",
+    "keyword": "Image Size Checker",
+    "location": "United States"
+  }
+}

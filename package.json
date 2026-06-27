@@ -1,10 +1,10 @@
 {
-  "name": "shipany-tanstack",
+  "name": "image-size-checker",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite dev --port 3000",
+    "dev": "vite dev --host 127.0.0.1 --port 3100 --strictPort",
     "prebuild": "node scripts/db-setup.mjs",
     "build": "vite build",
     "start": "node .output/server/index.mjs",
@@ -53,6 +53,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.0",
     "drizzle-orm": "^0.44.2",
+    "jszip": "^3.10.1",
     "lucide-react": "^0.511.0",
     "markdown-it": "^14.2.0",
     "motion": "^12.38.0",
@@ -99,14 +100,5 @@
     "typescript": "^5.9.0",
     "vite": "^8.0.16",
     "wrangler": "^4.98.0"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "@swc/core",
-      "esbuild",
-      "msw",
-      "sharp"
-    ]
   }
 }

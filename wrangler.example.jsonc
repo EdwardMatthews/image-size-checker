@@ -8,6 +8,12 @@
   "name": "image-size-checker",
   "compatibility_date": "2026-06-27",
   "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": true,
+  "routes": [
+    { "pattern": "imagesizechecker.pro", "custom_domain": true },
+    { "pattern": "www.imagesizechecker.pro", "custom_domain": true },
+  ],
   "observability": {
     "enabled": true,
   },

@@ -1,5 +1,6 @@
 /// <reference types="vite/client" />
 import type { ReactNode } from 'react';
+import { QueryClientProvider } from '@tanstack/react-query';
 import {
   createRootRoute,
   HeadContent,
@@ -10,7 +11,11 @@ import {
 import { ThemeProvider } from 'next-themes';
 
 import { envConfigs } from '@/config';
+import { getQueryClient } from '@/lib/query-client';
 import { getLocale, locales, localizeUrl } from '@/paraglide/runtime.js';
+import { usePublicConfig } from '@/hooks/use-public-config';
+import { GoogleAnalytics } from '@/components/analytics/google-analytics';
+import { Plausible } from '@/components/analytics/plausible';
 import { Toaster } from '@/components/ui/sonner';
 
 import '@fontsource-variable/inter';
@@ -55,16 +60,39 @@ export const Route = createRootRoute({
 });
 
 function RootComponent() {
+  const queryClient = getQueryClient();
+
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="light"
-      enableSystem
-      disableTransitionOnChange
-    >
-      <Outlet />
-      <Toaster position="top-center" richColors />
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="light"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <Outlet />
+        <AnalyticsScripts />
+        <Toaster position="top-center" richColors />
+      </ThemeProvider>
+    </QueryClientProvider>
+  );
+}
+
+function AnalyticsScripts() {
+  const { data: configs } = usePublicConfig();
+  const googleAnalyticsId = configs?.google_analytics_id?.trim();
+  const plausibleDomain = configs?.plausible_domain?.trim();
+  const plausibleSrc = configs?.plausible_src?.trim();
+
+  return (
+    <>
+      {googleAnalyticsId ? (
+        <GoogleAnalytics measurementId={googleAnalyticsId} />
+      ) : null}
+      {plausibleDomain ? (
+        <Plausible domain={plausibleDomain} src={plausibleSrc || undefined} />
+      ) : null}
+    </>
   );
 }
 

@@ -39,6 +39,7 @@ import {
 } from '@/lib/resize-transfer';
 import { cn } from '@/lib/utils';
 import { PublicFooter } from '@/components/public-footer';
+import { SizeToolsMenu } from '@/components/size-tools-menu';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -511,21 +512,22 @@ function ResizerHeader() {
           <span className="flex size-9 items-center justify-center rounded-lg bg-slate-950 text-white shadow-lg shadow-indigo-900/15">
             <Ruler className="size-5" aria-hidden="true" />
           </span>
-          <span>Image Size Checker</span>
+          <span className="hidden sm:inline">Image Size Checker</span>
         </a>
-        <nav className="flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 p-1 text-sm font-semibold text-slate-600">
+        <nav className="flex items-center gap-1 rounded-full border border-slate-200 bg-white/70 p-1 text-xs font-semibold text-slate-600 sm:gap-2 sm:text-sm">
           <a
-            className="rounded-full px-3 py-1.5 transition-colors hover:bg-indigo-50 hover:text-indigo-700"
+            className="rounded-full px-2 py-1.5 transition-colors hover:bg-indigo-50 hover:text-indigo-700 sm:px-3"
             href="/"
           >
             Checker
           </a>
           <a
-            className="rounded-full bg-slate-950 px-3 py-1.5 text-white transition-colors hover:bg-slate-800"
+            className="rounded-full bg-slate-950 px-2 py-1.5 text-white transition-colors hover:bg-slate-800 sm:px-3"
             href="/resizer"
           >
             Resizer
           </a>
+          <SizeToolsMenu compact />
         </nav>
       </div>
     </header>

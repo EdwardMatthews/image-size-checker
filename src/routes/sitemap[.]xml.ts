@@ -3,7 +3,15 @@ import { createFileRoute } from '@tanstack/react-router';
 import { envConfigs } from '@/config';
 import { baseLocale, locales, localizeUrl } from '@/paraglide/runtime.js';
 
-const STATIC_PATHS = ['', '/resizer', '/privacy-policy', '/terms-of-service'];
+const STATIC_PATHS = [
+  '',
+  '/resizer',
+  '/300x300-image-converter',
+  '/512x512-image-converter',
+  '/64x64-image-converter',
+  '/privacy-policy',
+  '/terms-of-service',
+];
 
 type Entry = {
   path: string;
@@ -45,8 +53,25 @@ export const Route = createFileRoute('/sitemap.xml')({
         const entries: Entry[] = STATIC_PATHS.map((path) => ({
           path,
           changeFrequency:
-            path === '' || path === '/resizer' ? 'weekly' : 'monthly',
-          priority: path === '' ? 1 : path === '/resizer' ? 0.9 : 0.5,
+            path === '' ||
+            path === '/resizer' ||
+            path === '/300x300-image-converter' ||
+            path === '/512x512-image-converter' ||
+            path === '/64x64-image-converter'
+              ? 'weekly'
+              : 'monthly',
+          priority:
+            path === ''
+              ? 1
+              : path === '/resizer'
+                ? 0.9
+                : path === '/300x300-image-converter'
+                  ? 0.85
+                  : path === '/512x512-image-converter'
+                    ? 0.84
+                    : path === '/64x64-image-converter'
+                      ? 0.83
+                      : 0.5,
         }));
 
         const xml = [

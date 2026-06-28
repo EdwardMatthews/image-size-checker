@@ -33,6 +33,7 @@ import {
 import { saveResizeTransfer } from '@/lib/resize-transfer';
 import { cn } from '@/lib/utils';
 import { PublicFooter } from '@/components/public-footer';
+import { SizeToolsMenu } from '@/components/size-tools-menu';
 import { Button, buttonVariants } from '@/components/ui/button';
 import {
   Card,
@@ -215,12 +216,7 @@ function SiteHeader() {
           >
             Image Resizer
           </a>
-          <a
-            className="rounded-full px-3 py-1.5 transition-colors hover:bg-indigo-50 hover:text-indigo-700"
-            href="#scenarios"
-          >
-            Scenarios
-          </a>
+          <SizeToolsMenu />
         </nav>
       </div>
     </header>

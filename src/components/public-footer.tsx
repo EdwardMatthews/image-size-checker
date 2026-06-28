@@ -6,6 +6,9 @@ const FOOTER_COLUMNS: FooterColumn[] = [
     links: [
       { label: 'Image Size Checker', href: '/' },
       { label: 'Image Resizer', href: '/resizer' },
+      { label: '300x300 Image Converter', href: '/300x300-image-converter' },
+      { label: '512x512 Image Converter', href: '/512x512-image-converter' },
+      { label: '64x64 Image Converter', href: '/64x64-image-converter' },
     ],
   },
   {
